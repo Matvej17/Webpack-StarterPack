@@ -1,0 +1,24 @@
+//Normalize
+@import "../../node_modules/normalize.css/normalize.css";
+
+//Farbičky
+@import "./colors";
+
+//Fonty
+@import "./fonts";
+
+//Premenné
+@import "./variables";
+
+//Custom checkbox/radiobox
+@import "./toggles";
+
+//Slick slider
+@import "./slick";
+@import "./slick-theme";
+
+//Row's
+@import "./row";
+
+//CSS
+@import "./burger";

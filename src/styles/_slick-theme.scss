@@ -1,0 +1,71 @@
+.slick-list {
+  
+    .slick-loading & {
+        background-color: $white;
+        background-image: url("../images/ajax-loader.gif");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.slick-prev, .slick-next {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    color: $white;
+    background: rgba($black, 1);
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    svg {
+        height: 24px;
+        width: auto;
+    }
+
+    &:hover {
+        color: $white;
+        background: rgba($black, 1);
+    }
+}
+
+.slick-prev {
+    left: 0px;
+}
+
+.slick-next {
+    right: 0px;
+}
+
+.slick-dots {
+    display: block;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    margin: 24px 0;
+
+    li {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: $black;
+        border-radius: 50%;
+        margin: 0 3px;
+        padding: 0;
+        cursor: pointer;
+
+        button {
+            display: none;
+        }
+
+        &.slick-active {
+            background-color: $black;
+        }
+    }
+}
